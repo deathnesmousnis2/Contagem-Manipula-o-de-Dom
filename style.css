@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Root faz com que eu tenha acesso a uma cor especifica sem precisar eu ter que digitar o código rgb sempre */
+:root {
+   --gold: #ddbc64; /* Definindo uma variável de cor chamada "gold" */
+}
+
+/* Estilização geral para remover margens e preenchimentos padrões, e definir a fonte padrão */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif; /* Definindo a fonte padrão */
+}
+
+/* Estilização do corpo da página */
+body {
+    /* Cor de fundo da página (imagem de fundo comentada) */
+    /* background-image: url("https://integravita.com.br/blog-integravita/wp-content/uploads/2021/12/fogos-de-artificio-scaled.jpg"); */
+    color: white; /* Cor do texto */
+    height: 100vh; /* Altura da página inteira */
+    display: flex; /* Usando flexbox para o layout */
+    flex-direction: column; /* Direção das flexbox em coluna */
+    align-items: center; /* Centralizando itens horizontalmente */
+    justify-content: center; /* Centralizando itens verticalmente */
+    background-color: #202124; /* Cor de fundo */
+}
+
+/* Estilização para o título principal */
+h1 {
+   font-size: 4rem; /* Tamanho da fonte do título */
+}
+
+/* Estilização específica para a classe "gold" dentro do título */
+h1 .gold {
+   color: var(--gold); /* Aplicando a cor "gold" */
+}
+
+/* Container principal para a contagem regressiva */
+.Contagem-Container {
+   display: flex; /* Usando flexbox para o layout */
+   width: 40%; /* Largura do container */
+   min-width: 450px; /* Largura mínima do container */
+   justify-content: space-around; /* Espaço entre os itens */
+}
+
+/* Estilização para cada bloco de contagem (dias, horas, minutos, segundos) */
+.format {
+   display: flex; /* Usando flexbox para o layout */
+   flex-direction: column; /* Direção das flexbox em coluna */
+   align-items: center; /* Centralizando itens horizontalmente */
+}
+
+/* Estilização para os números da contagem */
+.number {
+   font-size: 7rem; /* Tamanho da fonte dos números */
+}
+
+/* Estilização para o texto (Dias, Horas, Minutos, Segundos) */
+.text {
+   font-size: 16px; /* Tamanho da fonte do texto */
+   font-size: 1.5rem; /* Tamanho da fonte do texto */
+   color: var(--gold); /* Aplicando a cor "gold" */
+}
